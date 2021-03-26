@@ -2,11 +2,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css"  href="style.css" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 		<title>profile home page</title>
 	</head>
 	<body>
 		<div class="topnav">
-            <a class="active">Tal Avital</a>
+            <!-- <a class="active">Tal Avital</a> -->
+            <img  src="images\chuk1.png" alt="Snow" >
             <a href="#AboutMe">About Me</a>
             <a href="#MyPhotos">My Photos</a>
             <a href="#MyPlaylist">My Playlist</a>
@@ -58,7 +61,8 @@
 		</section>
 		<section id="QRCode">
 			<h2>QR Code</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Scan the QR and navigate to the project github page.</p>
+      <img  src="images\QR7.png" class="QR" alt="Snow" >
 			
 		</section>
 		<section id="QA">
@@ -137,29 +141,29 @@
 			<div class="cont-box">
 				<div class="cont-left">
 					<h3>send request</h3>
-					<form method="post" action="mailto:talavital1993@gmail.com">
+					<form method="post" action="mailto:talavital1993@gmail.com" enctype="text/plain">
 					<div class="input-r">
 						<div class="input-g">
 							<label>Name</label>
-							<input type="text" placeholder="your name here">
+							<input type="text" name="name" placeholder="your name here">
 						</div>
 						<div class="input-g">
 							<label>Phone</label>
-							<input type="text" placeholder="+972-12-3456-789">
+							<input type="text" name="Phone" placeholder="+972-12-3456-789">
 						</div>
 					</div>
 					<div class="input-r">
 						<div class="input-g">
 							<label>Email</label>
-							<input type="email" placeholder="abc@gmail.com">
+							<input type="email" name="email" placeholder="abc@gmail.com">
 						</div>
 						<div class="input-g">
 							<label>Subject</label>
-							<input type="text" placeholder="your subject here">
+							<input type="text" name="subject" placeholder="your subject here">
 						</div>
 					</div>
 					<label >Message</label>
-					<textarea rows="10" placeholder="your message here"></textarea>
+					<textarea rows="10" name="message" placeholder="your message here"></textarea>
 
 					<button type="submit">Send</bottom>
 					</form>
